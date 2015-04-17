@@ -23,7 +23,7 @@ ADDITIONAL LOOKUP CREDITS CAN BE PURCHASED FROM 1.4P PER LOOKUP UP TO 5P PER LOO
 
 CREDITS CAN BE PURCHASED VIA THE LINKS PROVIDED WITHIN THE EXTENSION.
 
-Integrates easily into your WordPress Blog.
+Integrates easily into your WordPress Blog and the WooCommerce Checkout.
 
 
 Technical features:
