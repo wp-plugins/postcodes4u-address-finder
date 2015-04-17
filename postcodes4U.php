@@ -5,7 +5,7 @@ Plugin URI: http://plugins.3xsoftware.co.uk
 Description: Postcode Lookup 
 Author: 3X Software Ltd
 Author URI: http://3xsoftware.co.uk
-Version: 1.0
+Version: 1.1
 */
 
 /***************************
@@ -47,12 +47,12 @@ function postcodes4u_install() {
         // Create post object
         $_p = array();
         $_p['post_title'] = $the_page_title;
-        $_p['post_content'] = "This text may be overridden by the plugin. You shouldn't edit it.";
+        $_p['post_content'] = "Postcodes4u Lookup.";
         $_p['post_status'] = 'private';
         $_p['post_type'] = 'page';
         $_p['comment_status'] = 'closed';
         $_p['ping_status'] = 'closed';
-        $_p['post_category'] = array(1); // the default 'Uncatrgorised'
+        $_p['post_category'] = array(1); // the default 'Uncategorised'
 
         // Insert the post into the database
         $the_page_id = wp_insert_post( $_p );
@@ -92,6 +92,9 @@ function postcodes4u_remove() {
     delete_option("postcodes4u_page_title");
     delete_option("postcodes4u_page_name");
     delete_option("postcodes4u_page_id");
+    
+    // Remove Any Settings Value
+    unregister_setting('pc4u_settings_group', 'pc4u_settings');
 
 }
 /*************************
@@ -118,6 +121,59 @@ include ('includes/display-functions.php');
 include ('includes/admin-page.php'); 
 
 
+// Add Local Plugin Templates to Woocommerce Search Path
+// =====================================================
 
+ 
+function pc4uplugin_plugin_path() {
+ 
+  // gets the absolute path to this plugin directory
+ 
+  return untrailingslashit( plugin_dir_path( __FILE__ ) );
+}
+ 
+add_filter( 'woocommerce_locate_template', 'pc4uplugin_woocommerce_locate_template', 10, 3 );
+ 
+function pc4uplugin_woocommerce_locate_template( $template, $template_name, $template_path ) {
+ 
+  global $woocommerce;
+  
+ 
+  $_template = $template;
+ 
+  if ( ! $template_path ) $template_path = $woocommerce->template_url;
+ 
+  $plugin_path  = pc4uplugin_plugin_path() . '/woocommerce/';
+ 
+ 
+ 
+  // Look within passed path within the theme - this is priority
+ 
+  $template = locate_template(
+    array(  $template_path . $template_name, $template_name )
+  );
+ 
+ 
+ 
+  // Modification: Get the template from Postcodes 4u plugin, if it exists
+  if (!$template && file_exists( $plugin_path . $template_name ))
+      $template = $plugin_path . $template_name;
+ 
+  // Use default template
+  if ( ! $template )
+    $template = $_template;
+ 
+ 
+  // Return what we found
+  return $template;
+ 
+}
+ 
+// SET DEFAULT CHECKOUT COUNTRY TO UK
+add_filter( 'default_checkout_country', 'change_default_checkout_country' );
 
+// Set United Kingdom (GB) 
+function change_default_checkout_country() {
+    return 'GB'; // country code
+}
 ?>

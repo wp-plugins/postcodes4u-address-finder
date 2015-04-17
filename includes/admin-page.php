@@ -17,7 +17,14 @@ global $pc4u_options;
 				
 				</p>
 
-			<p>Enter your Postcodes4U key and Username to link to your postcodes4U account. Login to your account at <a href="http://www.postcodes4u.co.uk"  target="_blank">Postcodes4U</a> for your account details.</p>
+            <h4><?php _e('Enable Postodes4u Integration in WooCommerce Checkout', 'pc4u_domain'); ?></h4>
+				<p>
+					<input id="pc4u_settings[woointegrate]" name="pc4u_settings[woointegrate]" type="checkbox" value="1" <?php checked('1', $pc4u_options['woointegrate']); ?> />
+					<label class="description" for="pc4u_settings[woointegrate]"><?php _e('Enable the postcodes4U Lookup in WooCommerce Checkout', 'pc4u_domain'); ?></label>
+				
+				</p>
+
+			<h4>Enter your Postcodes4U key and Username to link to your postcodes4U account. Login to your account at <a href="http://www.postcodes4u.co.uk"  target="_blank">Postcodes4U</a> for your account details.</h4>
 			
 			<h4><?php _e('Postcodes4U Key', 'pc4u_domain'); ?></h4>
 			
