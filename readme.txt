@@ -30,6 +30,7 @@ Technical features:
 
 * 100% user friendly, easy to install & remove
 * Lightweight, clean code
+* Works with WooCommerce 2.2.3 - 2.3.7
 
    
 == Installation ==
@@ -63,7 +64,10 @@ Register for an account at www.postcodes4u.co.uk for 30 free credits.
 
 = Do you offer address look-ups for other countries? =
 
-Currently we only offer address look ups to the UK.
+Currently we only offer address look ups to the UK.#
+
+= Woo Commerce Campatability =
+Works,and tested with,  WooCommerce 2.2.3 - 2.3.7 (The Current Version)
 
 
 == Screenshots ==
