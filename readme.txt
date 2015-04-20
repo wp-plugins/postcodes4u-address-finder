@@ -66,7 +66,7 @@ Register for an account at www.postcodes4u.co.uk for 30 free credits.
 
 Currently we only offer address look ups to the UK.#
 
-= Woo Commerce Campatability =
+= Woo Commerce Compatability =
 Works,and tested with,  WooCommerce 2.2.3 - 2.3.7 (The Current Version)
 
 
