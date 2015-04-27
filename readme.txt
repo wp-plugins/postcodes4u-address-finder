@@ -2,9 +2,9 @@
 Contributors: 3xsoftware
 Tags: postcode, lookup, address finder, address verification, woocommerce
 Requires at least: 3.0.1
-Tested up to: 4.1.1
+Tested up to: 4.2
 Requires WooCommerce at least: 2.2.3
-Tested WooCommerce up to: 2.3.7
+Tested WooCommerce up to: 2.3.8
 Stable tag: trunk
 
 "Postcodes4U Address Finder" lets you look up an address using a UK Postcode. Now Includes WooCommerce Integration.
@@ -30,7 +30,7 @@ Technical features:
 
 * 100% user friendly, easy to install & remove
 * Lightweight, clean code
-* Works with WooCommerce 2.2.3 - 2.3.7
+* Works with WooCommerce 2.2.3 - 2.3.8
 
    
 == Installation ==
@@ -67,7 +67,7 @@ Register for an account at www.postcodes4u.co.uk for 30 free credits.
 Currently we only offer address look ups to the UK.#
 
 = Woo Commerce Compatibility =
-Works,and tested with,  WooCommerce 2.2.3 - 2.3.7 (The Current Version)
+Works,and tested with,  WooCommerce 2.2.3 - 2.3.8 (The Current Version)
 
 
 == Screenshots ==
