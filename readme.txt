@@ -80,7 +80,8 @@ Works,and tested with,  WooCommerce 2.2.3 - 2.3.8 (The Current Version)
 
 1.0 Original 'Blog' form verion
 
-1.1 Added WooCommerce Checkout Billing and Shipping Postcode Lookup Integration
+1.1   Added WooCommerce Checkout Billing and Shipping Postcode Lookup Integration
+1.1.1 Checked compatability with Wordpress 4.3 and WooCommerce 2.3.8
 
 == Upgrade Notice ==
 
