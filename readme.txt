@@ -96,8 +96,8 @@ Currently we only offer address look ups to the UK.#
 = Woo Commerce Compatibility =
 Works,and tested with,  WooCommerce 2.2.3 - 2.3.9 (The Current Version)
 
-= Contact Form With Postcode Lookup
-The Plugin Contact form short code and customisation details is described in 'Other Notes'.
+= Contact Form With Postcode Lookup =
+The Plugin Contact form short code and customisation settings are described in 'Other Notes'.
 
 == Screenshots ==
 
