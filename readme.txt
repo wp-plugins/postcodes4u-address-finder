@@ -8,7 +8,7 @@ Tested WooCommerce up to: 2.3.9
 Stable tag: trunk
 
 "Postcodes4U Address Finder" lets you look up an address using a UK Postcode. 
-Includes WooCommerce Integration and a Postcode Lookup Contact Form.
+Includes WooCommerce Integration and a Contact Form.
 
 
 == Description ==
@@ -59,13 +59,13 @@ The Postcode Lookup Contact form can be added by simply placing a short code '[p
 
 To Add the Postcode Lookup Contact form use the following shortcode:
 
-' [pc4u_contact_form] '
+**[pc4u_contact_form]**
 
 By default the short code will display the telephone and postal address fields but does not require them be be entered when the contact form is submitted.
 
 To add a Contact Form that requires the telephone number and postal address to be present use the short code with attributes shown below:
 
-' [pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES] '
+**[pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES]**
    
 
 = Postcodes4u Contact Form Customisation =
@@ -89,7 +89,7 @@ A full list of the contact form attributes
 	
 A Contact Form Shortcode example that sets all of the parameters follows:
 
-' [pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"] '
+**[pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"]**
 
 
 
@@ -100,14 +100,13 @@ A Contact Form Shortcode example that sets all of the parameters follows:
 
 Yes, you will need a Postcodes4U account in order to obtain your key and username. Once you have registered you will then receive 30 free credits. 
 
-
 = How do I get free credits =
 
 Register for an account at <http://www.postcodes4u.co.uk> for 30 free credits. 
 
 = Do you offer address look-ups for other countries? =
 
-Currently we only offer address look ups to the UK.#
+Currently we only offer address look ups to the UK.
 
 = Woo Commerce Compatibility =
 Works,and tested with,  WooCommerce 2.2.3 - 2.3.9 (The Current Version)
@@ -136,8 +135,6 @@ The Plugin Contact form short code and customisation settings are described in '
 
 = Version 1.0 =
 * Original 'Blog' form verion.
-
-
 
 
 
