@@ -48,7 +48,10 @@ OR
 1. Upload the Postcodes4U plugin folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Once Installed enter your Postcodes4U key and username.
+= Configure Postcodes4u =
+The configuration settings for the Postcodes4u plugin can be accessed from the **Postcodes4U** page in the **Settings** menu.
+
+Once Installed enter your Postcodes4U key and username which can be obtained from <http://www.postcodes4u.co.uk>
 
 Once the plugin has been activated and you have entered your key and username you can use the postcode lookup form on the newly created postcodes4u page. (visible to admins only)
 
