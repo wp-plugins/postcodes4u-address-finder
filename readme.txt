@@ -8,7 +8,7 @@ Tested WooCommerce up to: 2.3.9
 Stable tag: trunk
 
 "Postcodes4U Address Finder" lets you look up an address using a UK Postcode. 
-Includes WooCommerce Integration and a Contact Form plugin.
+Includes WooCommerce Integration and a Postcode Lookup Contact Form.
 
 
 == Description ==
@@ -38,6 +38,8 @@ CREDITS CAN BE PURCHASED VIA THE LINKS PROVIDED WITHIN THE PLUGIN.
    
 == Installation ==
 
+= To Install The Postcodes4u Plugin =
+
 1. Install the plugin from your wordpress admin panel.
 
 OR
@@ -45,7 +47,7 @@ OR
 1. Upload the Postcodes4U plugin folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Done? Go to the plugin's settings page and enter your Postcodes4U key and username.
+Once Installed enter your Postcodes4U key and username.
 
 Once the plugin has been activated and you have entered your key and username you can use the postcode lookup form on the newly created postcodes4u page. (visible to admins only)
 
@@ -56,12 +58,14 @@ The Postcode Lookup Contact form can be added by simply placing a short code '[p
 == Postcodes4u Contact Form ==
 
 To Add the Postcode Lookup Contact form use the following shortcode:
-'[pc4u_contact_form]'
+
+' [pc4u_contact_form] '
 
 By default the short code will display the telephone and postal address fields but does not require them be be entered when the contact form is submitted.
 
-To add a Contact Form that requires the telephone no and postal address to be present use the short code with attributes shown below:
-'[pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES]'.
+To add a Contact Form that requires the telephone number and postal address to be present use the short code with attributes shown below:
+
+' [pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES] '
    
 
 = Postcodes4u Contact Form Customisation =
@@ -84,7 +88,8 @@ A full list of the contact form attributes
 
 	
 A Contact Form Shortcode example that sets all of the parameters follows:
-'[pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"]'
+
+' [pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"] '
 
 
 
