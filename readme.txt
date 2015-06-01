@@ -14,8 +14,11 @@ Includes WooCommerce Integration and a Contact Form.
 == Description ==
 
 "Postcodes4U Address Finder" Lets you look up an address using a UK Postcode. 
+
 If you are using WooCommerce on your site you can add postcode lookup to the checkout form.
+
 A customisable Contact Form with Postcode lookup can be added to any of your pages. 
+
 
 = Please Note =
 
