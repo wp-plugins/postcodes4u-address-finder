@@ -2,10 +2,10 @@
 /*
 Plugin Name: Postcodes4U
 Plugin URI: http://plugins.3xsoftware.co.uk
-Description: Postcode Lookup
+Description: Postcode Lookup 
 Author: 3X Software Ltd
 Author URI: http://3xsoftware.co.uk
-Version: 1.1.1
+Version: 1.2
 */
 
 /***************************
@@ -14,14 +14,38 @@ Version: 1.1.1
 
 
 /* Runs when plugin is activated */
-register_activation_hook(__FILE__,'postcodes4u_install');
+register_activation_hook(__FILE__,'postcodes4u_install'); 
 
 /* Runs on plugin deactivation*/
 register_deactivation_hook( __FILE__, 'postcodes4u_remove' );
 
 
+/***************************
+* includes
+
+***************************/
+
+include ('includes/data-processing.php'); 
+include ('includes/scripts.php'); 
+include ('includes/display-functions.php'); 
+include ('includes/admin-page.php'); 
+
+
+
+// SET DEFAULT CHECKOUT COUNTRY TO UK
+add_filter( 'default_checkout_country', 'change_default_checkout_country' );
+
+// Activate Postcode Plugin Form
+add_shortcode( 'pc4u_contact_form', 'pc4u_shortcode' );
+
+$pc4u_plugin_name = 'Postcodes4U';
+
+// retrieves the plugin settings from the options table
+$pc4u_options = get_option ('pc4u_settings');
+
+
 /*****************************************
-*extra
+* INSTALLATION PROCESSES
 *****************************************/
 function postcodes4u_install() {
 
@@ -71,6 +95,7 @@ function postcodes4u_install() {
 
     delete_option( 'postcodes4u_page_id' );
     add_option( 'postcodes4u_page_id', $the_page_id );
+    
 
 }
 
@@ -92,10 +117,12 @@ function postcodes4u_remove() {
     delete_option("postcodes4u_page_title");
     delete_option("postcodes4u_page_name");
     delete_option("postcodes4u_page_id");
-
+    
     // Remove Any Settings Value
     unregister_setting('pc4u_settings_group', 'pc4u_settings');
 
+
+    
 }
 /*************************
 *end extra
@@ -104,76 +131,64 @@ function postcodes4u_remove() {
 
 
 
-
-$pc4u_plugin_name = 'Postcodes4U';
-
-// retrieves the plugin settings from the options table
-$pc4u_options = get_option ('pc4u_settings');
-
-/***************************
-* includes
-
-***************************/
-
-include ('includes/data-processing.php');
-include ('includes/scripts.php');
-include ('includes/display-functions.php');
-include ('includes/admin-page.php');
-
-
 // Add Local Plugin Templates to Woocommerce Search Path
 // =====================================================
 
-
+ 
 function pc4uplugin_plugin_path() {
-
+ 
   // gets the absolute path to this plugin directory
-
+ 
   return untrailingslashit( plugin_dir_path( __FILE__ ) );
 }
-
+ 
 add_filter( 'woocommerce_locate_template', 'pc4uplugin_woocommerce_locate_template', 10, 3 );
-
+ 
 function pc4uplugin_woocommerce_locate_template( $template, $template_name, $template_path ) {
-
+ 
   global $woocommerce;
-
-
+  
+ 
   $_template = $template;
-
+ 
   if ( ! $template_path ) $template_path = $woocommerce->template_url;
-
+ 
   $plugin_path  = pc4uplugin_plugin_path() . '/woocommerce/';
-
-
-
+ 
+ 
+ 
   // Look within passed path within the theme - this is priority
-
+ 
   $template = locate_template(
     array(  $template_path . $template_name, $template_name )
   );
-
-
-
+ 
+ 
+ 
   // Modification: Get the template from Postcodes 4u plugin, if it exists
   if (!$template && file_exists( $plugin_path . $template_name ))
       $template = $plugin_path . $template_name;
-
+ 
   // Use default template
   if ( ! $template )
     $template = $_template;
-
-
+ 
+ 
   // Return what we found
   return $template;
-
+ 
 }
+ 
 
-// SET DEFAULT CHECKOUT COUNTRY TO UK
-add_filter( 'default_checkout_country', 'change_default_checkout_country' );
-
-// Set United Kingdom (GB)
+// Set United Kingdom (GB) 
 function change_default_checkout_country() {
     return 'GB'; // country code
 }
+
+
+
+
+
+
+
 ?>
