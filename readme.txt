@@ -49,14 +49,17 @@ Once the plugin has been activated and you have entered your key and username yo
 
 If you have WooCommerce installed and have enabled 'WooCommerce Integration' on the settings page your customers can use post code lookups in the checkout billing and shipping addresses to ensure accurate entry details.
 
+The Plugin Postcode Lookup Contact form short code and customisation settings are described in 'Other Notes'.
+
 == Postcodes4u Contact Form ==
+
 To Add the Postcode Lookup Contact form use the following shortcode:
-    **[pc4u_contact_form].**
+'[pc4u_contact_form]'
 
 By default the short code will display the telephone and postal address fields but does not require them be be entered when the contact form is submitted.
 
 To add a Contact Form that requires the telephone no and postal address to be present use the short code with attributes shown below:
-   [pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES].
+'[pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES]'.
    
 
 = Postcodes4u Contact Form Customisation =
@@ -79,7 +82,7 @@ A full list of the contact form attributes
 
 	
 A Contact Form Shortcode example that sets all of the parameters follows:
-**[pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"]**
+'[pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"]'
 
 
 
@@ -93,7 +96,7 @@ Yes, you will need a Postcodes4U account in order to obtain your key and usernam
 
 = How do I get free credits =
 
-Register for an account at www.postcodes4u.co.uk for 30 free credits. 
+Register for an account at <http://www.postcodes4u.co.uk> for 30 free credits. 
 
 = Do you offer address look-ups for other countries? =
 
@@ -108,19 +111,27 @@ The Plugin Contact form short code and customisation settings are described in '
 == Screenshots ==
 
 1. Simple interface to add your Postcodes4U details
+
 2. Contact form with Postcodes4U Postcode Lookup
+
 3. Integrates into WooCommerce Checkout 
+
 4. Simple address look up form for Postcodes4U 
+
+
 == Changelog ==
 
-1.0 Original 'Blog' form verion
-1.1 Added WooCommerce Checkout Billing and Shipping Postcode Lookup Integration
-1.2 Added Shortcode customisable Contact form with Postcode Lookup
+=Version 1.2=
+Added Shortcode customisable Contact Form with Postcode Lookup.
+
+=Version 1.1=
+Added WooCommerce Checkout Billing and Shipping Postcode Lookup Integration.
+
+=Version 1.0=
+Original 'Blog' form verion.
+
+
+
+
 
 == Upgrade Notice ==
-
-
-
-
-
-`
