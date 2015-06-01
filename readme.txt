@@ -51,9 +51,9 @@ If you have WooCommerce installed and have enabled 'WooCommerce Integration' on 
 
 == Postcodes4u Contact Form ==
 To Add the Postcode Lookup Contact form use the following shortcode:
-    [pc4u_contact_form].
+    **[pc4u_contact_form].**
 
-By default the short code will display the telephone and postal aaddress fields but does not require them be be entered when the contact form is submitted.
+By default the short code will display the telephone and postal address fields but does not require them be be entered when the contact form is submitted.
 
 To add a Contact Form that requires the telephone no and postal address to be present use the short code with attributes shown below:
    [pc4u_contact_form musthavetelephone="YES" musthaveaddress="YES].
@@ -63,23 +63,23 @@ To add a Contact Form that requires the telephone no and postal address to be pr
 
 A full list of the contact form attributes 
 
-contacttitle  - Name of Contact Form - defaults to "Contact Us"
+**contacttitle**  - Name of Contact Form - defaults to "Contact Us"
 
-subjecttitle  - Contact Form Subject Title - defaults to "Subject"
+**subjecttitle**  - Contact Form Subject Title - defaults to "Subject"
 
-messagetitle  - Contact Form Message Title - defaults to "Your Message"
+**messagetitle**  - Contact Form Message Title - defaults to "Your Message"
 
-showtelephone - Set to "TRUE" or "YES" to display telephone number input area, "FALSE" or "NO" to not display - Default is "YES"
+**showtelephone** - Set to "TRUE" or "YES" to display telephone number input area, "FALSE" or "NO" to not display - Default is "YES"
 
-musthavetelephone - Set to "TRUE" or "YES" if a telephone number must be included in the message,"FALSE" or "NO" to not display  -  Default is "NO"
+**musthavetelephone** - Set to "TRUE" or "YES" if a telephone number must be included in the message,"FALSE" or "NO" to not display  -  Default is "NO"
 
-showaddress   - Set to "TRUE" or "YES" to display postal address input area, "FALSE" or "NO" to not display - Default is "YES"
+**showaddress**   - Set to "TRUE" or "YES" to display postal address input area, "FALSE" or "NO" to not display - Default is "YES"
 
-musthaveaddress - Set to "TRUE" or "YES" if a postal address must be included in the message,"FALSE" or "NO" to not display  -  Default is "NO"
+**musthaveaddress** - Set to "TRUE" or "YES" if a postal address must be included in the message,"FALSE" or "NO" to not display  -  Default is "NO"
 
 	
 A Contact Form Shortcode example that sets all of the parameters follows:
-[pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"]
+**[pc4u_contact_form contacttitle="Send Us A Message" subjecttitle="Message Subject" messagetitle="Message" showtelephone="YES" musthavetelephone="YES" showaddress="YES" musthaveaddress="YES"]**
 
 
 
