@@ -8,7 +8,7 @@ Tested WooCommerce up to: 2.3.9
 Stable tag: trunk
 
 "Postcodes4U Address Finder" lets you look up an address using a UK Postcode. 
-Now Includes WooCommerce Integration and a plugin postcode lookup contact form.
+Includes WooCommerce Integration and a Contact Form plugin.
 
 
 == Description ==
