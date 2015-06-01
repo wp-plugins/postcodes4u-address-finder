@@ -15,6 +15,9 @@ Includes WooCommerce Integration and a Contact Form plugin.
 
 "Postcodes4U Address Finder" Lets you look up an address using a UK Postcode. 
 If you are using WooCommerce on your site you can add postcode lookup to the checkout form.
+A customisable Contact Form with Postcode lookup can be added to any of your pages. 
+
+= Please Note =
 
 THIS POSTCODE LOOKUP IS A UK ONLY SERVICE SO WILL NOT WORK FOR ANY OTHER COUNTRY.
 
@@ -22,17 +25,16 @@ THIS PLUGIN REQUIRES YOU TO REGISTER AT: http://www.postcodes4u.co.uk WHERE YOU 
 
 ADDITIONAL LOOKUP CREDITS CAN BE PURCHASED FROM 1.4P PER LOOKUP UP TO 5P PER LOOKUP DEPENDING ON THE VOLUME PURCHASED
 
-CREDITS CAN BE PURCHASED VIA THE LINKS PROVIDED WITHIN THE EXTENSION.
-
-Integrates easily into your WordPress Pages, Blog and the WooCommerce Checkout.
+CREDITS CAN BE PURCHASED VIA THE LINKS PROVIDED WITHIN THE PLUGIN.
 
 
-Technical features:
+
+= Technical features: =
 
 * 100% user friendly, easy to install & remove
 * Lightweight, clean code
 * Works with WooCommerce 2.2.3 - 2.3.9
-
+   
    
 == Installation ==
 
@@ -49,7 +51,7 @@ Once the plugin has been activated and you have entered your key and username yo
 
 If you have WooCommerce installed and have enabled 'WooCommerce Integration' on the settings page your customers can use post code lookups in the checkout billing and shipping addresses to ensure accurate entry details.
 
-The Plugin Postcode Lookup Contact form short code and customisation settings are described in 'Other Notes'.
+The Postcode Lookup Contact form can be added by simply placing a short code '[pc4u_contact_form]' on the required page. Full details on the customisation settings for the contact form are described in 'Other Notes'.
 
 == Postcodes4u Contact Form ==
 
@@ -121,14 +123,14 @@ The Plugin Contact form short code and customisation settings are described in '
 
 == Changelog ==
 
-=Version 1.2=
-Added Shortcode customisable Contact Form with Postcode Lookup.
+= Version 1.2 =
+* Added Shortcode customisable Contact Form with Postcode Lookup.
 
-=Version 1.1=
-Added WooCommerce Checkout Billing and Shipping Postcode Lookup Integration.
+= Version 1.1 =
+* Added WooCommerce Checkout Billing and Shipping Postcode Lookup Integration.
 
-=Version 1.0=
-Original 'Blog' form verion.
+= Version 1.0 =
+* Original 'Blog' form verion.
 
 
 
