@@ -5,7 +5,7 @@ Plugin URI: http://plugins.3xsoftware.co.uk
 Description: Postcode Lookup 
 Author: 3X Software Ltd
 Author URI: http://3xsoftware.co.uk
-Version: 1.2
+Version: 1.2.1
 */
 
 /***************************

@@ -84,7 +84,13 @@ function pc4uPostcodeSearchBegin() {
             var SearchTerm = document.getElementById(pc4uPostcodeFieldName).value;
 
             //Build the url
-            strUrl = "http://services.3xsoftware.co.uk/Search/ByPostcode/json?";
+            //  Check if HTTPS
+            if (window.location.protocol == "'https:") {
+                strUrl = "https://";
+            } else {
+                strUrl = "http://";
+            }
+            strUrl += "services.3xsoftware.co.uk/Search/ByPostcode/json?";
             strUrl += "username=" + encodeURI(pc4uuser);
             strUrl += "&key=" + encodeURI(pc4ukey);
             strUrl += "&postcode=" + encodeURI(SearchTerm);
@@ -166,9 +172,6 @@ function Pc4uSearchEnd(response) {
 }
 
 
-
-
-
 // ==================================================
 // Postcode4u Lookup Common 'Select Address Process'
 //  Return Selected Address Details
@@ -193,7 +196,13 @@ function Pc4uSearchIdBegin(lookupcode) {
     var user = document.getElementById("postcodes4uuser").innerHTML;
 
     //Build the url
-    strUrl = "http://services.3xsoftware.co.uk/search/byid/json?";
+    //  Check if HTTPS
+    if (window.location.protocol == "'https:") {
+        strUrl = "https://services.3xsoftware.co.uk";
+    } else {
+        strUrl = "http://services.3xsoftware.co.uk";
+    }
+    strUrl += "/search/byid/json?";
     strUrl += "username=" + encodeURI(user);
     strUrl += "&key=" + encodeURI(key);
     strUrl += "&id=" + encodeURI(Id);
