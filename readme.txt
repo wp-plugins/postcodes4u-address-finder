@@ -34,7 +34,7 @@ CREDITS CAN BE PURCHASED VIA THE LINKS PROVIDED WITHIN THE PLUGIN.
 
 * 100% user friendly, easy to install & remove
 * Lightweight, clean code
-* Works with WooCommerce 2.2.3 - 2.3.9
+* Works with WooCommerce 2.2.3 - 2.3.13
    
    
 == Installation ==
@@ -130,6 +130,10 @@ The Plugin Contact form short code and customisation settings are described in '
 
 
 == Changelog ==
+
+= Version 1.2.1 =
+* Admin Page Update - Allow HTTPS in Woo Commerce.
+
 
 = Version 1.2 =
 * Added Shortcode customisable Contact Form with Postcode Lookup.
