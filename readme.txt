@@ -113,7 +113,7 @@ Register for an account at <http://www.postcodes4u.co.uk> for 30 free credits.
 Currently we only offer address look ups to the UK.
 
 = Woo Commerce Compatibility =
-Works,and tested with,  WooCommerce 2.2.3 - 2.3.9 (The Current Version)
+Works,and tested with,  WooCommerce 2.2.3 - 2.3.13 (The Current Version)
 
 = Contact Form With Postcode Lookup =
 The Plugin Contact form short code and customisation settings are described in 'Other Notes'.
